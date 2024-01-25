@@ -1,0 +1,94 @@
+.container {
+	display: flex;
+	gap: 25px;
+}
+
+.circle {
+	width: 125px;
+	height: 125px;
+	background-color: rgb(255, 182, 23);
+	border-radius: 50%;
+}
+
+.triagngle {
+	border-left: 55px solid transparent;
+	border-right: 55px solid transparent;
+	border-bottom: 125px solid rgb(230, 56, 56);
+}
+
+.square {
+	width: 125px;
+	height: 125px;
+	background-color: rgb(138, 36, 254);
+}
+
+.rectangle {
+	width: 212px;
+	height: 125px;
+	background-color: darkcyan;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+		background-color: rgb(255, 65, 1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes flip {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(180deg);
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+		border-bottom: 125px solid rgb(190, 54, 54);
+	}
+	50% {
+		opacity: 0;
+		border-bottom: 125px solid rgb(32, 148, 236);
+	}
+	100% {
+		opacity: 1;
+		border-bottom: 125px solid rgb(190, 54, 54);
+	}
+}
+
+@keyframes skew {
+	0% {
+		transform: skewX(0deg);
+	}
+	50% {
+		transform: skewX(-20deg);
+	}
+	100% {
+		transform: skewX(0deg);
+	}
+}
+
+.circle.animated {
+	animation: pulse 2s infinite;
+}
+
+.triagngle.animated {
+	animation: fade 2s infinite;
+}
+
+.square.animated {
+	animation: flip 2s infinite;
+}
+
+.rectangle.animated {
+	animation: skew 2s infinite;
+}

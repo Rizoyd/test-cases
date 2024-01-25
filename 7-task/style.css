@@ -1,0 +1,25 @@
+#btn {
+	position: absolute;
+	width: 100px;
+	height: 25px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 25px auto;
+}
+
+.squares {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	gap: 12px;
+	margin: 90px auto;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background-color: darkmagenta;
+}
